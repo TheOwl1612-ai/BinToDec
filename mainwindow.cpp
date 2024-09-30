@@ -37,7 +37,6 @@ qint8 MainWindow::toDecimal(QVariant num)
 {
     QString s = num.toString();
     qint8 prev = 0;
-    // QString res = "";
 
     for (QChar c : s){
         prev =  prev*2 + c.digitValue();
